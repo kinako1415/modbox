@@ -1,3 +1,4 @@
+import About from "./../components/home/About";
 import styles from "./page.module.scss";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         </h1>
         <h3>Stylish and free. A new way of living with containers.</h3>
       </div>
+      <About />
     </div>
   );
 }
