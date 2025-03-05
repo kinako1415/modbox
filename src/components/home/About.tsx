@@ -18,8 +18,8 @@ const About = () => {
         <div className={styles.titleContainer}>
           <div className={styles.about}>about</div>
           <div className={styles.title}>
-            <span>MODBOX</span>
-            とは
+            <span className={styles.main}>MODBOX</span>
+            <span className={styles.sub}>とは</span>
           </div>
           <div className={styles.subTitle}>
             当社は、おしゃれで洗練されたデザイン
