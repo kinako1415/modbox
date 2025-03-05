@@ -7,7 +7,15 @@ export default function Home() {
         <source src="/cafe.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div></div>
+      <div className={styles.filter}></div>
+      <div className={styles.title}>
+        <h1>
+          スタイリッシュに、自由に。
+          <br />
+          コンテナで作る新しい暮らし。
+        </h1>
+        <h3>Stylish and free. A new way of living with containers.</h3>
+      </div>
     </div>
   );
 }

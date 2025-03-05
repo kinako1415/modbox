@@ -1,5 +1,40 @@
 .video {
-  height: 100vh;
+  height: 94vh;
   object-fit: cover;
   border-radius: 0px 0px 100px 100px;
+  position: absolute;
+  z-index: -1;
+}
+
+.filter {
+  background: rgba(0, 0, 0, 0.4);
+  height: 94vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: var(--background-color-light);
+  align-items: center;
+  justify-content: center;
+  height: 94vh;
+  gap: 8px;
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fcfaf8;
+    letter-spacing: 0.16em;
+  }
 }
