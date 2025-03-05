@@ -32,6 +32,20 @@ const About = () => {
           当社は、おしゃれで洗練されたデザインのコンテナハウスを提供する企業です。住居やオフィス、店舗など多様な用途に対応し、機能性とデザイン性を兼ね備えた快適な空間を実現します。自由なカスタマイズが可能で、お客様のライフスタイルやビジネスニーズに合わせた最適なプランを提案。環境に配慮した持続可能な設計を採用し、スタイリッシュで心地よい暮らしを提供します。
         </div>
       </div>
+      <Image
+        className={styles.treeRightImage}
+        src="/shadeTreeRight.svg"
+        alt="shadeTreeRight"
+        width={800}
+        height={1330}
+      />
+      <Image
+        className={styles.treeLeftImage}
+        src="/shadeTreeLeft.svg"
+        alt="shadeTreeRight"
+        width={600}
+        height={130}
+      />
     </div>
   );
 };

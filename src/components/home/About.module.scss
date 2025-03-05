@@ -1,10 +1,10 @@
 .container {
   position: relative;
-  width: fit-content;
-  inset: 0;
-  margin: 200px auto;
+  width: 100%;
+  padding: 200px 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6vw;
 
   .image {
@@ -93,5 +93,19 @@
       font-size: 1.2rem;
       color: var(--font-color-primary);
     }
+  }
+
+  .treeRightImage {
+    position: absolute;
+    right: 0;
+    top: -130;
+    z-index: -2;
+  }
+
+  .treeLeftImage {
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    bottom: -400px;
   }
 }
