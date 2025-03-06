@@ -19,6 +19,7 @@ const Header = () => {
     hidden: { opacity: 0, y: "20px" },
     show: { opacity: 1, y: 0 },
   };
+
   return (
     <div className={styles.container}>
       <div className={styles.logo}>MODBOX</div>

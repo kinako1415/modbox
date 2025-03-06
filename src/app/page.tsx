@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import About from "./../components/home/About";
 import styles from "./page.module.scss";
 import Scroll from "@/components/home/Scroll";
@@ -16,8 +16,6 @@ export default function Home() {
     hidden: { y: "20px", opacity: 0 },
     visible: { y: "0px", opacity: 1 },
   };
-
-  const positiony = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   console.log(scrollYProgress);
 
