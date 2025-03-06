@@ -9,7 +9,7 @@ const Scroll = () => {
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
-        transition={{ repeat: Infinity, duration: 1 }}
+        transition={{ repeat: Infinity, duration: 1.2, ease: [0, 0.8, 0.9, 1] }}
         className={styles.line}
       ></motion.div>
       <div className={styles.arrowContainer}>

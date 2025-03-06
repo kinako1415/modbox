@@ -1,16 +1,26 @@
+import { motion } from "framer-motion";
 import styles from "./About.module.scss";
 import Image from "next/image";
 
 const About = () => {
   return (
     <div className={styles.container}>
-      <Image
-        className={styles.image}
-        src="/cafeImage.jpg"
-        alt="cafe"
-        width={300}
-        height={300}
-      />
+      <div style={{ overflow: "hidden", position: "relative" }}>
+        <motion.div
+          className={styles.filter}
+          initial={{ x: 0 }}
+          whileInView={{ x: "100%" }}
+          transition={{ duration: 0.3, ease: [1, 0.2, 0.2, 1], delay: 0.2 }}
+          viewport={{ once: true }}
+        ></motion.div>
+        <Image
+          className={styles.image}
+          src="/cafeImage.jpg"
+          alt="cafe"
+          width={300}
+          height={300}
+        />
+      </div>
 
       <div className={styles.vLine}></div>
 

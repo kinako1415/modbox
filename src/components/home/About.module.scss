@@ -14,6 +14,14 @@
     border-radius: 30px;
     object-fit: cover;
   }
+  .filter {
+    height: 42vw;
+    width: 34vw;
+    border-radius: 30px;
+    background-color: var(--background-color-light);
+    position: absolute;
+    transform-origin: right;
+  }
 
   .vLine {
     height: 450px;
