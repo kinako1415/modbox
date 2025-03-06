@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, BIZ_UDPGothic } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
 
 const bizUdpGothic = BIZ_UDPGothic({
   weight: ["400", "700"],
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${bizUdpGothic.className} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>

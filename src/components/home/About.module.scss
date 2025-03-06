@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 6vw;
+  overflow: hidden;
 
   .image {
     height: 42vw;
@@ -100,6 +101,7 @@
     right: 0;
     top: -130;
     z-index: -2;
+    width: 54vw;
   }
 
   .treeLeftImage {
@@ -107,5 +109,6 @@
     left: 0;
     z-index: -2;
     bottom: -400px;
+    width: 34vw;
   }
 }
