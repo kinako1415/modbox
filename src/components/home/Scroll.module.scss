@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 90px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .line {
+    height: 60px;
+    width: 1px;
+    background-color: var(--background-color-light);
+    transform-origin: top;
+  }
+  .arrowContainer {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid #fbf4f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

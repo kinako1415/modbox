@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import About from "./../components/home/About";
 import styles from "./page.module.scss";
+import Scroll from "@/components/home/Scroll";
 export default function Home() {
   const InView = {
     hidden: { y: "40px", opacity: 0 },
@@ -36,6 +37,7 @@ export default function Home() {
         >
           Stylish and free. A new way of living with containers.
         </motion.div>
+        <Scroll />
       </div>
       <About />
     </div>
