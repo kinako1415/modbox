@@ -8,17 +8,18 @@ const About = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.5,
+        staggerChildren: 0.16,
+        delayChildren: 1,
       },
     },
   };
 
   const item = {
-    hidden: { opacity: 0, y: "20px" },
+    hidden: { y: "20px", filter: "blur(4px)", opacity: 0 },
     show: {
-      opacity: 1,
       y: 0,
+      filter: "blur(0px)",
+      opacity: 1,
       transition: { ease: [0, 0.64, 0.86, 1] },
     },
   };
@@ -37,7 +38,7 @@ const About = () => {
           className={styles.filter}
           initial={{ x: 0 }}
           whileInView={{ x: "100%" }}
-          transition={{ duration: 0.3, ease: [1, 0.2, 0.2, 1], delay: 0.4 }}
+          transition={{ duration: 0.3, ease: [1, 0.2, 0.2, 1], delay: 0.6 }}
           viewport={{ once: true }}
         ></motion.div>
         <Image
@@ -49,27 +50,35 @@ const About = () => {
         />
       </div>
 
-      <div className={styles.vLine}></div>
+      <motion.div
+        initial={{ scaleY: 0 }}
+        whileInView={{ scaleY: 1 }}
+        transition={{ duration: 0.3, ease: [1, 0.2, 0.2, 1], delay: 0.5 }}
+        viewport={{ once: true }}
+        className={styles.vLine}
+      ></motion.div>
 
       <div className={styles.rightContainer}>
         <div className={styles.titleContainer}>
           <motion.div variants={item} className={styles.about}>
             about
           </motion.div>
-          <div className={styles.title}>
-            <motion.span variants={item} className={styles.main}>
-              MODBOX
-            </motion.span>
-            <motion.span variants={item} className={styles.sub}>
-              とは
-            </motion.span>
-          </div>
+          <motion.div variants={item} className={styles.title}>
+            <span className={styles.main}>MODBOX</span>
+            <span className={styles.sub}>とは</span>
+          </motion.div>
           <motion.div variants={item} className={styles.subTitle}>
             当社は、おしゃれで洗練されたデザイン
           </motion.div>
         </div>
 
-        <div className={styles.hLine}></div>
+        <motion.div
+          className={styles.hLine}
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{ duration: 0.3, ease: [1, 0.2, 0.2, 1], delay: 0.5 }}
+          viewport={{ once: true }}
+        ></motion.div>
 
         <motion.div variants={item} className={styles.details}>
           当社は、おしゃれで洗練されたデザインのコンテナハウスを提供する企業です。住居やオフィス、店舗など多様な用途に対応し、機能性とデザイン性を兼ね備えた快適な空間を実現します。自由なカスタマイズが可能で、お客様のライフスタイルやビジネスニーズに合わせた最適なプランを提案。環境に配慮した持続可能な設計を採用し、スタイリッシュで心地よい暮らしを提供します。

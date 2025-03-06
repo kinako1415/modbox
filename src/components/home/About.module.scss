@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   gap: 6vw;
-  overflow: hidden;
 
   .image {
     height: 42vw;
@@ -27,6 +26,7 @@
     height: 450px;
     width: 1px;
     background-color: var(--font-color-primary);
+    transform-origin: top;
   }
 
   .rightContainer {
@@ -93,6 +93,7 @@
       width: 60px;
       height: 1px;
       background-color: var(--font-color-primary);
+      transform-origin: left;
     }
 
     .details {

@@ -13,8 +13,8 @@ export default function Home() {
   });
 
   const InView = {
-    hidden: { y: "20px", opacity: 0 },
-    visible: { y: "0px", opacity: 1 },
+    hidden: { y: "20px", filter: "blur(4px)", opacity: 0.4 },
+    visible: { y: "0px", filter: "blur(0px)", opacity: 1 },
   };
 
   console.log(scrollYProgress);
@@ -25,7 +25,12 @@ export default function Home() {
         <source src="/cafe.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className={styles.filter}></div>
+      <motion.div
+        className={styles.filter}
+        initial={{ backdropFilter: "blur(2px)" }}
+        animate={{ backdropFilter: "blur(0px)" }}
+        transition={{ duration: 1, ease: [0, 0.64, 0.86, 1] }}
+      ></motion.div>
 
       <div className={styles.titleContainer}>
         <motion.div
@@ -43,7 +48,7 @@ export default function Home() {
           variants={InView}
           initial="hidden"
           animate="visible"
-          transition={{ delay: 0.4, duration: 0.6, ease: [0, 0.64, 0.86, 1] }}
+          transition={{ delay: 0.2, duration: 0.6, ease: [0, 0.64, 0.86, 1] }}
           className={styles.subTitle}
         >
           Stylish and free. A new way of living with containers.
