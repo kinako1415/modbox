@@ -109,15 +109,40 @@
     position: absolute;
     right: 0;
     top: -130;
-    z-index: -1;
+    z-index: -2;
     width: 54vw;
   }
 
   .treeLeftImage {
     position: absolute;
     left: 0;
-    z-index: -1;
+    z-index: -2;
     bottom: -400px;
     width: 34vw;
+  }
+}
+
+// スマホ用対応
+@media (max-width: 1024px) {
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+      height: 34vw;
+      width: 56vw;
+    }
+    .filter {
+      height: 34vw;
+      width: 56vw;
+    }
+
+    .vLine {
+      height: 0px;
+      width: 0px;
+    }
   }
 }
