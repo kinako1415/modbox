@@ -18,6 +18,7 @@ const Scroll = () => {
           alt="icon"
           width={20}
           height={20}
+          className={styles.arrow}
         />
       </div>
     </div>
